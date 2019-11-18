@@ -1,5 +1,4 @@
-{
-    "games": [
+[
       {
         "id": "kPDxpJZ8PD",
         "name": "Spirit Island",
@@ -28,7 +27,7 @@
         "max_players": 5,
         "description": "<i>Scythe</i> gives players almost complete control over their fate. Other than each player's individual hidden objective card, the only elements of luck or variability are &quot;Encounter&quot; cards that players will draw as they interact with the citizens of newly explored lands. Each encounter card provides the player with several options, allowing them to mitigate the luck of the draw through their selection. Combat is also driven by choices, not luck or randomness.<br />\r\n<br />\r\n<i>Scythe</i> uses a streamlined action-selection mechanism (no rounds or phases) to keep gameplay moving at a brisk pace and reduce downtime between turns. While there is plenty of direct conflict for players who seek it, there is no player elimination.<br />\r\n<br />\r\nEvery part of <i>Scythe</i> has an aspect of engine-building to it. Players can upgrade actions to become more efficient, build structures that improve their position on the map, enlist new recruits to enhance character abilities, activate mechs to deter opponents from invading, and expand their borders to reap greater types and quantities of resources. These engine-building aspects create a sense of momentum and progress throughout the game. The order in which players improve their engine adds to the unique feel of each game, even when playing one faction multiple times.",
         "image_url": "https://d2k4q26owzy373.cloudfront.net/350x350/games/uploaded/1559254971843-513-lrmjs2L.jpg",
-        "url": "https://stonemaiergames.com/games/scythe/?utm_source=boardgameatlas.com&utm_medium=search&utm_campaign=bga_ads",
+        "url": "https://stonemaiergames.com/games/scythe/?utm_source=boardgameatlas.com&utm_medium=search&utm_campaign=bga_ads"
       },
       {
         "id": "fDn9rQjH9O",
@@ -48,7 +47,7 @@
         "max_players": 4,
         "description": "In Agricola (Latin for &quot;farmer&quot;), you're a farmer in a wooden shack with your spouse and little else. On a turn, you get to take only two actions, one for you and one for the spouse, from all the possibilities you'll find on a farm: collecting clay, wood or stone; building fences; and so on. You might think about having kids in order to get more work accomplished, but first you need to expand your house. And what are you going to feed all the little rug rats? Agricola is a turn based game. There are 14 game turns plus 6 harvest phases (after turn 4, 7, 9, 11, 13, and 14). Each player starts with two playing tokens (farmer and wife) and thus can take two actions per turn. There are multiple options, and while the game progresses, you'll have more and more: first thing in a turn, a new action card is flipped over. Problem: Each action can be taken just once per turn, so it's important to do some things with high preference. Each player also starts with a hand of 7 Occupation cards (of more than 160 total) and 7 Minor Improvement cards (of more than 140 total) that he may use during the game if they fit in his/her strategy. This amounts to countless strategies, some depending on your card hand. Sometimes it's a good choice to stay on course, sometimes you better react on what your opponents do. Agricola can also be played without cards (family game) and can even be played solo. Designed by Uwe Rosenberg.",
         "image_url": "https://d2k4q26owzy373.cloudfront.net/350x350/games/uploaded/1559254915322-61vm3wX33lL.jpg",
-        "url": "https://www.boardgameatlas.com/search/game/M5treAlrHc/agricola-revised-edition",
+        "url": "https://www.boardgameatlas.com/search/game/M5treAlrHc/agricola-revised-edition"
       },
       {
         "id": "5H5JS0KLzK",
@@ -222,7 +221,7 @@
         "max_players": 5,
         "description": "<div><p>The monster figures in <i>Mansions of Madness Second Edition</i> are set on the same bases as the Arkham Horror Premium Figures and those featured in the first edition of Mansions of Madness. These bases allow you to slide information tokens underneath them, so you have quick and easy access to the monsters' traits and abilities. Because of the consistency between editions, you can seamlessly incorporate your first edition and painted minis into your new game, expanding the possibilities of your game and further immersing you in the bone-chilling happenings that have befallen Arkham's residents.</p><p><br />In the <i>Mansions of Madness Second Edition</i> companion app, you will have the option to incorporate some or all of your old components. Whether you have the first edition and its expansions or just one of the products, you can still incorporate it into your game. Each product you add to your collection will allow you to play as that game's investigators, introduce the possibility for those monsters to spawn, include a few new people to encounter, and widen the pool of maps the app could generate for your chosen scenario. If you decide to play without certain expansions or add more to your collection, you can always go back and change your collection within the app, thereby altering the possible combinations of monsters, maps, and investigators.</p>\r\n\r\n\r\n</div>",
         "image_url": "https://d2k4q26owzy373.cloudfront.net/350x350/games/uploaded/1559254973792-51Z2Bp88KhgL.jpg",
-        "url": "https://www.boardgameatlas.com/search/game/Zspd2nNHfz/mansions-of-madness-2nd-edition",
+        "url": "https://www.boardgameatlas.com/search/game/Zspd2nNHfz/mansions-of-madness-2nd-edition"
       },
       {
         "id": "uVD7OzRUNZ",
@@ -1005,4 +1004,3 @@
         "url": "https://www.gmtgames.com/p-656-a-distant-plain-3rd-printing.aspx?utm_source=boardgameatlas.com&utm_medium=search&utm_campaign=bga_ads"
       }
     ]
-  }
