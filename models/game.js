@@ -2,12 +2,13 @@ const mongoose = require('../db/connection.js');
 const Schema = mongoose.Schema
 
 const gameSchema = new mongoose.Schema({
-    "image": String,
+    "id": String,
+    "year_published": Number,
+    "image_url": String,
     "name": String,
-    "directions": String,
     "min_players": Number,
     "max_players": Number,
-    "game_url": String,
+    "url": String,
     "description": String
 });
 
