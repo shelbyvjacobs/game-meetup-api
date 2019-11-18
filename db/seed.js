@@ -1,5 +1,6 @@
 const gamesJSON = require("./games");
 const Games = require("../models/Games");
+const meetupJSON = require("./meetup");
 
 const gamesData = gamesJSON.map(item => {
     const games = {}
@@ -14,15 +15,35 @@ const gamesData = gamesJSON.map(item => {
     return games
 })
 
-Games.deleteMany({})
-    .then(() => {
-        Games.create(gamesData)
-            .then(games => {
-                console.log(games)
-                process.exit();
-            })
-            .catch(err => {
-                console.log(err)
-                process.exit()
-            })
-    })
+const meetupData = meetupJSON.map(item => {
+    const meetupsArray = []
+    for(let i = 0; i < items.meetups.length; i++) {
+        for(let j = 0; j < gamesJSON.length; j++) {
+            if(item.meetups[i] === gamesJSON[j]._id) {
+                meetupsArray.push(gamesJSON[j]);
+            }
+        }
+    }
+const meetups = {}
+meetups.location = item.location
+meetups.time = item.time
+meetups.date = item.date
+meetups.creator = item.creator
+meetups.description = item.description
+meetups.players = item.players
+return meetups
+});
+
+BuildTogether();
+
+function BuildTogether() {
+    Meetups.deleteMany({}).then(() => {
+        Meetups.create(meetupJSON)
+        .then(data => {
+            process.exit();
+        })
+        .catch(err => {
+            console.log(err);
+        });
+    });
+}

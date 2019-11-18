@@ -1,0 +1,18 @@
+[
+    {
+        "location": "3605 14th St NW, Washington, DC 20010",
+        "time": "8:00PM",
+        "date": "11-29-2019",
+        "creator": "Shelby",
+        "description": "Come by the Airedale DC Bar to come play board games! Beer and food available at venue.",
+        "players": [2,8]
+    },
+    {
+        "location": "509 7th St NW, Washington, DC 20004",
+        "time": "12:30PM",
+        "date": "12-04-2019",
+        "creator": "Tory",
+        "description": "Let's play a quick game during lunch!",
+        "players": [2,8]
+    }
+]
