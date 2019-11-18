@@ -1,5 +1,5 @@
 const gamesJSON = require("./games");
-const Games = require("../models/Games");
+const Games = require("../models/game");
 const meetupJSON = require("./meetup");
 
 const gamesData = gamesJSON.map(item => {
@@ -17,7 +17,7 @@ const gamesData = gamesJSON.map(item => {
 
 const meetupData = meetupJSON.map(item => {
     const meetupsArray = []
-    for(let i = 0; i < items.meetups.length; i++) {
+    for(let i = 0; i < item.meetups.length; i++) {
         for(let j = 0; j < gamesJSON.length; j++) {
             if(item.meetups[i] === gamesJSON[j]._id) {
                 meetupsArray.push(gamesJSON[j]);
