@@ -1,5 +1,6 @@
 [
     {
+        "id": "01",
         "location": "3605 14th St NW, Washington, DC 20010",
         "time": "8:00PM",
         "date": "11-29-2019",
@@ -8,6 +9,7 @@
         "players": [2,8]
     },
     {
+        "id": "02",
         "location": "509 7th St NW, Washington, DC 20004",
         "time": "12:30PM",
         "date": "12-04-2019",
