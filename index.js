@@ -33,7 +33,7 @@ app.get("/games", function (req, res) {
 })
 
 //Edit Meetups
-app.put("/meetup/title/:title", function(req, res){
+app.put("/meetup/id/:_id", function(req, res){
     Meetup.findOneAndUpdate({ title: req.params.title }, req.body, {
         new: true
     }).then(meetup => {
@@ -48,7 +48,7 @@ app.delete("/meetup", function(req, res) {
     })
 })
 
-app.set("port", process.env.PORT || 8080);
+app.set("port", process.env.PORT || 6080);
 
 app.listen(app.get("port"), () => {
   console.log(`✅ PORT: ${app.get("port")} 🌟`);
