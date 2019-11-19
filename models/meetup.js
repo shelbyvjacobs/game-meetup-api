@@ -10,7 +10,8 @@ const meetupSchema = new mongoose.Schema({
     "date": String,
     "creator": String,
     "description": String,
-    "players": [Number]
+    "players": [Number],
+    "game": String
 });
 
 const meetup = mongoose.model("meetup", meetupSchema);
