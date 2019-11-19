@@ -26,7 +26,7 @@ app.get("/", function (req, res) {
 })
 
 //Find Games
-app.get("/game", function (req, res) {
+app.get("/games", function (req, res) {
     Game.find({}).then(game => {
         res.json(game);
     })
