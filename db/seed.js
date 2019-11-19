@@ -1,6 +1,19 @@
 const gamesJSON = require("./games");
 const Games = require("../models/game");
+const Meetup = require("../models/meetup")
 const meetupJSON = require("./meetup");
+
+function gameMeet(gameMeetups, games){
+    let gameAndMeet = [];
+    gameMeetups.map(meetUpId => {
+        games.map(games => {
+            if (meetUpId === meetups._id){
+                gameAndMeet.push(games)
+            }
+        })
+    })
+    return gameAndMeet;
+}
 
 const gamesData = gamesJSON.map(item => {
     const games = {}
@@ -15,35 +28,39 @@ const gamesData = gamesJSON.map(item => {
     return games
 })
 
-const meetupData = meetupJSON.map(item => {
-    const meetupsArray = []
-    for(let i = 0; i < item.meetups.length; i++) {
-        for(let j = 0; j < gamesJSON.length; j++) {
-            if(item.meetups[i] === gamesJSON[j]._id) {
-                meetupsArray.push(gamesJSON[j]);
-            }
-        }
-    }
-const meetups = {}
-meetups.location = item.location
-meetups.time = item.time
-meetups.date = item.date
-meetups.creator = item.creator
-meetups.description = item.description
-meetups.players = item.players
-return meetups
-});
+    const meetupData = meetupJSON.map(item => {
+    const meetups = {}
+    meetups.location = item.location
+    meetups.time = item.time
+    meetups.date = item.date
+    meetups.creator = item.creator
+    meetups.description = item.description
+    meetups.players = item.players
+    meetups.game = gameMeet(item.game, gamesData)
+    return meetups
+})
 
-BuildTogether();
+Meetup.deleteMany({})
+.then(() => {
+    Meetup.create(meetupData)
+    .then(meetup => {
+        console.log(meetup)
+        process.exit();
+    })
+    .catch(err => {
+        console.log(err)
+        process.exit();
+    })
+})
 
-function BuildTogether() {
-    Meetups.deleteMany({}).then(() => {
-        Meetups.create(meetupJSON)
-        .then(data => {
-            process.exit();
+Games.deleteMany({})
+    .then(() => {
+        Games.create(gamesData)
+        .then(games => {
+            console.log(games)
         })
         .catch(err => {
-            console.log(err);
-        });
-    });
-}
+            console.log(err)
+        })
+    })
+

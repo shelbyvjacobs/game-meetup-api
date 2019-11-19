@@ -3,7 +3,7 @@ const app = express();
 const mongoose = require("mongoose")
 const parser = require("body-parser");
 const cors = require("cors");
-const Meetups = require("./models/meetup.js");
+const Meetup = require("./models/meetup.js");
 
 mongoose.set('useFindAndModify', false);
 app.use(parser.urlencoded({ extended: false }));
