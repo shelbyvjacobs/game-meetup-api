@@ -4,21 +4,22 @@ const mongoose = require("mongoose")
 const parser = require("body-parser");
 const cors = require("cors");
 const Meetup = require("./models/meetup.js");
+const Game = require("./models/game.js")
 
 mongoose.set('useFindAndModify', false);
 app.use(parser.urlencoded({ extended: false }));
 app.use(parser.json());
 app.use(cors());
 
-app.post("/meetups", function (req, res) {
-    Meetups.create(req.body).then(meetups => {
-        res.json(meetups);
+app.post("/meetup", function (req, res) {
+    Meetup.create(req.body).then(meetup => {
+        res.json(meetup);
     })
 })
 
 app.get("/", function (req, res) {
-    Meetups.find({}).then(meetups => {
-        res.json(meetups);
+    Meetup.find({}).then(meetup => {
+        res.json(meetup);
     })
 })
 
