@@ -42,7 +42,7 @@ app.put("/meetup/id/:_id", function(req, res){
 });
 
 //Delete Meetups
-app.delete("/meetup/:_id", function(req, res) {
+app.delete("/meetup/id/:_id", function(req, res) {
     Meetup.findOneAndDelete({ name: req.body.id }).then(meetup => {
         res.json(meetup);
     })
