@@ -33,7 +33,7 @@ app.get("/games", function (req, res) {
 })
 
 //Edit Meetups
-app.put("/meetup/id/:_id", function(req, res){
+app.put("/meetup/id/:id", function(req, res){
     Meetup.findOneAndUpdate({ title: req.params.id }, req.body, {
         new: true
     }).then(meetup => {
@@ -42,7 +42,7 @@ app.put("/meetup/id/:_id", function(req, res){
 });
 
 //Delete Meetups
-app.delete("/meetup/id/:_id", function(req, res) {
+app.delete("/meetup/id/:id", function(req, res) {
     Meetup.findOneAndDelete({ name: req.params.id }).then(meetup => {
         res.json(meetup);
     })
