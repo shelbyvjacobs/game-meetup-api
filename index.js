@@ -23,11 +23,25 @@ app.get("/", function (req, res) {
     })
 })
 
+app.get("/game", function (req, res) {
+    Game.find({}).then(game => {
+        res.json(game);
+    })
+})
 
+app.put("/meetup/title/:title", function(req, res){
+    Meetup.findOneAndUpdate({ title: req.params.title }, req.body, {
+        new: true
+    }).then(meetup => {
+        res.json(meetup);
+    });
+});
 
-
-
-
+app.delete("/meetup/:name", function(req, res) {
+    Meetup.findOneAndDelete({ name: req.body.name }).then(meetup => {
+        res.json(meetup);
+    })
+})
 
 app.set("port", process.env.PORT || 8080);
 
