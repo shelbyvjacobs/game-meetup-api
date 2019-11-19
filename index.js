@@ -11,24 +11,28 @@ app.use(parser.urlencoded({ extended: false }));
 app.use(parser.json());
 app.use(cors());
 
+//Create Meetup
 app.post("/meetup", function (req, res) {
     Meetup.create(req.body).then(meetup => {
         res.json(meetup);
     })
 })
 
+//Find Meetups
 app.get("/", function (req, res) {
     Meetup.find({}).then(meetup => {
         res.json(meetup);
     })
 })
 
+//Find Games
 app.get("/game", function (req, res) {
     Game.find({}).then(game => {
         res.json(game);
     })
 })
 
+//Edit Meetups
 app.put("/meetup/title/:title", function(req, res){
     Meetup.findOneAndUpdate({ title: req.params.title }, req.body, {
         new: true
@@ -37,8 +41,9 @@ app.put("/meetup/title/:title", function(req, res){
     });
 });
 
-app.delete("/meetup/:name", function(req, res) {
-    Meetup.findOneAndDelete({ name: req.body.name }).then(meetup => {
+//Delete Meetups
+app.delete("/meetup", function(req, res) {
+    Meetup.findOneAndDelete({ name: req.body.title }).then(meetup => {
         res.json(meetup);
     })
 })
