@@ -34,7 +34,7 @@ app.get("/games", function (req, res) {
 
 //Edit Meetups
 app.put("/meetup/id/:_id", function(req, res){
-    Meetup.findOneAndUpdate({ title: req.params.id }, req.body, {
+    Meetup.findOneAndUpdate({ _id: req.params.id }, req.body, {
         new: true
     }).then(meetup => {
         res.json(meetup);
@@ -43,7 +43,7 @@ app.put("/meetup/id/:_id", function(req, res){
 
 //Delete Meetups
 app.delete("/meetup/id/:_id", function(req, res) {
-    Meetup.findOneAndDelete({ id: req.params.id }).then(meetup => {
+    Meetup.findOneAndDelete({ _id: req.params.id }).then(meetup => {
         res.json(meetup);
     })
 })

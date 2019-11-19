@@ -2,7 +2,7 @@ const mongoose = require('../db/connection.js');
 const Schema = mongoose.Schema
 
 const gameSchema = new mongoose.Schema({
-    "id": String,
+    
     "year_published": Number,
     "image_url": String,
     "name": String,

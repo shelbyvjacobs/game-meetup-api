@@ -4,7 +4,7 @@ const Schema = mongoose.Schema
 
 const meetupSchema = new mongoose.Schema({
     "title": String,
-    "id": String,
+   
     "location": String,
     "time": String,
     "date": String,
