@@ -16,10 +16,9 @@ const meetupSchema = new Schema({
     "description": String,
     "players": [Number],
     "game": String,
-    "attendees": [{
-        type: String
-    }]
-});
+    "attendees": [String]
+}
+);
 
 const meetup = mongoose.model("meetup", meetupSchema);
 module.exports = meetup;
