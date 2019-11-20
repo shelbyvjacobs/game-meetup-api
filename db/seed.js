@@ -5,6 +5,7 @@ const Games = require("../models/game");
 
 const meetupData = meetupJSON.map(item => {
     const meetups = {}
+    meetups.title = item.title,
     meetups.location = item.location
     meetups.time = item.time
     meetups.date = item.date
