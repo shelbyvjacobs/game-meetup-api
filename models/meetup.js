@@ -3,12 +3,12 @@ const Games = require('./game');
 const Schema = mongoose.Schema
 
 const meetupSchema = new Schema({
-   "title": String,
    "_id": {
        type: Schema.ObjectId,
        trim: true,
        auto: true
    },
+    "title": String,
     "location": String,
     "time": String,
     "date": String,
