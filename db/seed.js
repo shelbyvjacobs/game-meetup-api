@@ -23,7 +23,7 @@ const gamesData = gamesJSON.map(item => {
     games.year_published = item.year_published
     games.min_players = item.min_players
     games.max_players = item.max_players
-    games.game_url = item.game_url
+    games.official_url = item.official_url
     games.description = item.description
     return games
 })

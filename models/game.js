@@ -12,7 +12,7 @@ const gameSchema = new Schema({
     "name": String,
     "min_players": Number,
     "max_players": Number,
-    "url": String,
+    "official_url": String,
     "description": String
 });
 
