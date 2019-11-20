@@ -3,6 +3,13 @@
 ### Description
 The Game Meetup API is the backbone to the Board Game Meetup app currently [in production](https://github.com/torykling/game-meetup). The API utilizes data from the [Board Game Atlas API](https://www.boardgameatlas.com/api/docs) in a JSON file with models built with Mongoose, Mongoose queries with RESTful paths, and a Node.js seed file. This is a part of a group project made in the General Assembly Software Engineering Immersive program. 
 
+[DEPLOYED VERSION](https://game-meetup-api.herokuapp.com/)
+
+#### Team Members 
+- [Dallas Lind](https://github.com/DallasLind)
+- [Shelby Jacobs](https://github.com/shelbyvjacobs)
+- [Tory Klingenstein](https://github.com/torykling)
+
 ### Example
 This is an example of what can be found in our JSON data for the games model.
 ```
