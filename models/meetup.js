@@ -3,7 +3,7 @@ const Games = require('./game');
 const Schema = mongoose.Schema
 
 const attendeeSchema = new Schema({
-    attendees: {
+    "attendees": {
         type: [String],
         default: undefined 
     }
