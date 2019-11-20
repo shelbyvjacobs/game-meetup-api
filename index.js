@@ -41,21 +41,15 @@ app.put("/meetup/id/:id", function(req, res){
     });
 });
 
-app.post('/meetup/:id/attendees', (req, res) => {
-    Meetup.findOneAndUpdate({ _id: req.params.id }, { $push: { attendees: req.body }}, { new: true })
+app.put('/meetup/id/:id', (req, res) => {
+    Meetup.findOneAndUpdate({ _id: req.params.id }, { $addToSet: { attendees: req.body }}, { new: true })
     .then(meetup => {
-        let attendees = {};
-        meetup.attendees = meetup.attendees[meetup.attendees.length - 1].attendees;
-        Meetup.create(attendees)
-        .then(attendees => {
-            res.json
-            (meetup);
-        })
+        res.json(meetup)
     })
     .catch(err => {
         res.send(err)
     });
-});
+})
 
 
 

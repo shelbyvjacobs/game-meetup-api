@@ -6,7 +6,7 @@ let mongoURI = "";
 if (process.env.NODE_ENV === "production") {
   mongoURI = process.env.DB_URL;
 } else {
-  mongoURI = "mongodb://localhost/games";
+  mongoURI = "mongodb://localhost:6080/games";
 }
 mongoose
   .connect(mongoURI, { useNewUrlParser: true })
