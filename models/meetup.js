@@ -19,7 +19,9 @@ const meetupSchema = new Schema({
     "attendees": [{
         type: String
     }]
-});
+},
+{ typeKey: '$type' }
+);
 
 const meetup = mongoose.model("meetup", meetupSchema);
 module.exports = meetup;
