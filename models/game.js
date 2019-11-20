@@ -12,8 +12,8 @@ const gameSchema = new Schema({
     "name": String,
     "min_players": Number,
     "max_players": Number,
-    "official_url": String,
-    "description": String
+    "description": String,
+    "official_url": String
 });
 
 const games = mongoose.model("games", gameSchema);
