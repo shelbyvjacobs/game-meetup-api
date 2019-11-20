@@ -2,13 +2,6 @@ const mongoose = require('../db/connection.js');
 const Games = require('./game');
 const Schema = mongoose.Schema
 
-const attendeeSchema = new Schema({
-    "attendees": {
-        formType: [String],
-        default: undefined 
-    }
-})
-
 const meetupSchema = new Schema({
    "_id": {
        type: Schema.ObjectId,
@@ -23,9 +16,10 @@ const meetupSchema = new Schema({
     "description": String,
     "players": [Number],
     "game": String,
-    "attendees": [attendeeSchema]
+    "attendees": [{
+        type: String
+    }]
 });
-
 
 const meetup = mongoose.model("meetup", meetupSchema);
 module.exports = meetup;
