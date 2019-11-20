@@ -42,7 +42,8 @@ app.put("/meetup/id/:id", function(req, res){
 });
 
 app.put('/meetup/id/:id', (req, res) => {
-    Meetup.findOneAndUpdate({ _id: req.params.id }, { $addToSet: { attendees: req.body }}, { new: true })
+    Meetup.findOneAndUpdate({ _id: req.params.id }, 
+    { $each: { attendees: req.body }}, { new: true })
     .then(meetup => {
         res.json(meetup)
     })
@@ -54,14 +55,14 @@ app.put('/meetup/id/:id', (req, res) => {
 
 
 
-app.put("/meetup/attendees/:id", function(req, res){
-   Meetup.findOneAndUpdate({ attendees: req.params.attendees },
-    req.body, {
-        new: true
-    }).then(meetup => {
-        res.json(meetup);
-    }) 
-})
+// app.put("/meetup/attendees/:id", function(req, res){
+//    Meetup.findOneAndUpdate({ attendees: req.params.attendees },
+//     req.body, {
+//         new: true
+//     }).then(meetup => {
+//         res.json(meetup);
+//     }) 
+// })
 
 //Delete Meetups
 app.delete("/meetup/id/:id", function(req, res) {
