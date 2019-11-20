@@ -42,8 +42,10 @@ Query | Path | Description | Additional Information |
 POST | `/meetup` | Creates New Meetup |    |
 GET | `/` | Automatically pulls up the meetups |    |
 GET | `/games` | Find the selection of games |    |
-PUT | `/meetup/id/:id` | Find a meetup by ID and edit it |    |
+PUT | `/meetup/id/:id` | Find a meetup by ID and edit it |  Edit details of the event  |
+PUT | `/meetup/attendees/id/:id` | Find a meetup by ID and edit it | Add whoever is attending the event   |
 DELETE | `/meetup/id/:id` | Find a meetup by ID and delete |      |
+
 
 ### Build Status
 ![](https://img.shields.io/badge/BUILD-IN%20PROGRESS-informational)
