@@ -56,4 +56,41 @@ Until the front-end reaches completion status, this project is subject to contin
 * MongoDB
 * Node.js
 * Postman
+* Express
 
+### Installation Instructions
+
+1. clone this repository
+```
+git clone https://github.com/shelbyvjacobs/game-meetup-api.git
+```
+2. change into the directory
+```
+cd game-meetup-api
+```
+3. install dependencies
+```
+npm install
+```
+4. run the project
+```
+npm start
+```
+
+### Approach 
+
+* Connect to database & test connection
+* Find API that's interesting & has good documentation
+* Brainstorm features and models
+* Create schemas and seed database
+* Make API routes and test all endpoints
+* Develop bigger and better features
+
+### Future Plans
+
+* Implement authentication for users
+* Create users model/schema/routes
+
+### Contribute
+Source code: [https://github.com/shelbyvjacobs/game-meetup-api](https://github.com/shelbyvjacobs/game-meetup-api)
+Issue Tracker: [https://github.com/shelbyvjacobs/game-meetup-api/issues](https://github.com/shelbyvjacobs/game-meetup-api/issues)
