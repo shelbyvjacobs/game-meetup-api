@@ -43,7 +43,7 @@ app.put("/meetup/id/:id", function(req, res){
 
 app.put('/meetup/id/:id', (req, res) => {
     Meetup.findOneAndUpdate({ _id: req.params.id }, 
-    { $each: { attendees: req.body }}, { new: true })
+    { $addToSet: { attendees: req.body }}, { new: true })
     .then(meetup => {
         res.json(meetup)
     })
