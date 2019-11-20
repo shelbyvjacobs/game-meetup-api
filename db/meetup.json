@@ -20,5 +20,93 @@
         "description": "Let's play a quick game during lunch!",
         "players": [2,8],
         "game": "Spirit Island"
+    },
+    {
+       "title": "Games yo",
+       "id": "03",
+       "location": "Somewhere",
+       "time": "Now",
+       "date": "Today",
+       "creator": "Dallas",
+       "description": "I don't know",
+       "players": [2,20],
+       "game": "Uno" 
+    },
+    {
+        "title": "Geemu",
+        "id": "04",
+        "location": "Texas",
+        "time": "4:00PM",
+        "date": "03-21-2020",
+        "creator": "Sandy Cheeks",
+        "description": "Yee haw",
+        "players": [2,5],
+        "game": "SpaceCorp"
+    },
+    {
+        "title": "Eyyy",
+        "id": "05",
+        "location": "Nebraska",
+        "time": "2:00AM",
+        "date": "05-02-2054",
+        "creator": "Tyler the",
+        "description": "Eyyyyyyyy",
+        "players": [2,10],
+        "game": "Castle Panic"
+    },
+    {
+        "title": "Hmmm",
+        "id": "06",
+        "location": "USA",
+        "time": "3:00PM",
+        "date": "02-14-2045",
+        "creator": "Me",
+        "description": "Fuuuuutuuuuuure",
+        "players": [1,3],
+        "game": "Sushi Go!"
+    },
+    {
+        "title": "A",
+        "id": "07",
+        "location": "Minnesota",
+        "time": "4:02AM",
+        "date": "11-20-2019",
+        "creator": "George Lucas",
+        "description": "That Mandalorian is pretty rad",
+        "players": [4,15],
+        "game": "Chess"
+    },
+    {
+        "title": "B",
+        "id": "08",
+        "location": "Idaho",
+        "time": "5:39PM",
+        "date": "07-30-2030",
+        "creator": "Obi Wan",
+        "description": "Country roooooads",
+        "players": [2,13],
+        "game": "Mint Works"
+    },
+    {
+        "title": "Running out of clever names",
+        "id": "09",
+        "location": "China",
+        "time": "6:20PM",
+        "date": "04-20-2020",
+        "creator": "Snoop",
+        "description": "Blaze it",
+        "players": [4,20],
+        "game": "Ganz schön clever"
+    },
+    {
+        "title": "Definitely out of ideas",
+        "id": "10",
+        "location": "GA",
+        "time": "3:00PM",
+        "date": "11-20-2019",
+        "creator": "Not Connor",
+        "description": "Subways, man",
+        "players": [1,24],
+        "game": "Fuse"
     }
 ]
