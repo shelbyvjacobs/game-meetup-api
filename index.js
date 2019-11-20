@@ -41,7 +41,7 @@ app.put("/meetup/id/:id", function(req, res){
     });
 });
 
-app.put('/meetup/attendees/id/:id', (req, res) => {
+app.put('/meetup/attend/id/:id', (req, res) => {
     Meetup.findOneAndUpdate({ _id: req.params.id }, 
     { $push: { attendees: req.body }}, { new: true })
     .then(meetup => {
