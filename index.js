@@ -41,6 +41,15 @@ app.put("/meetup/id/:id", function(req, res){
     });
 });
 
+app.put("/meetup/attendees/:attendees", function(req, res){
+   Meetup.findOneAndUpdate({ attendees: req.params.attendees },
+    req.body, {
+        new: true
+    }).then(meetup => {
+        res.json(meetup);
+    }) 
+})
+
 //Delete Meetups
 app.delete("/meetup/id/:id", function(req, res) {
     Meetup.findOneAndDelete({ _id: req.params.id }).then(meetup => {

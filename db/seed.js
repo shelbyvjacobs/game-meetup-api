@@ -13,6 +13,7 @@ const meetupData = meetupJSON.map(item => {
     meetups.description = item.description
     meetups.players = item.players
     meetups.game = item.game
+    meetups.attendees = item.attendees
     return meetups
 })
 

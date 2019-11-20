@@ -8,7 +8,8 @@
         "creator": "Shelby",
         "description": "Come by the Airedale DC Bar to come play board games! Beer and food available at venue.",
         "players": [2,8],
-        "game": "Scrabble"
+        "game": "Scrabble",
+        "attendees": ["Tissa", "Ray"]
     },
     {
         "title": "Let's Unwind During Lunch",
@@ -19,7 +20,8 @@
         "creator": "Tory",
         "description": "Let's play a quick game during lunch!",
         "players": [2,8],
-        "game": "Spirit Island"
+        "game": "Spirit Island",
+        "attendees": ["Joe", "Karen"]
     },
     {
        "title": "Games!! Let's Play!",
@@ -30,7 +32,8 @@
        "creator": "Dallas",
        "description": "I don't have friends so let's play some games to fix that",
        "players": [2,20],
-       "game": "Uno" 
+       "game": "Uno",
+       "attendees": ["Bola", "Erin"] 
     },
     {
         "title": "Games at the Riverwalk",
@@ -41,7 +44,8 @@
         "creator": "Sandy Cheeks",
         "description": "Let's meet up by Halcyon and play board games in their back room!",
         "players": [2,5],
-        "game": "SpaceCorp"
+        "game": "SpaceCorp",
+        "attendees": ["Connor", "ChiChi"]
     },
     {
         "title": "Let's Play Board Games at the Brewery",
@@ -52,7 +56,8 @@
         "creator": "Tyler",
         "description": "Let's get some beers and play some games",
         "players": [2,10],
-        "game": "Castle Panic"
+        "game": "Castle Panic",
+        "attendees": ["Steven", "Tyler"]
     },
     {
         "title": "Hangout at the Vegas Strip",
@@ -63,7 +68,8 @@
         "creator": "Mark",
         "description": "Don't feel like gambling but I brought a game with me!",
         "players": [1,3],
-        "game": "Sushi Go!"
+        "game": "Sushi Go!",
+        "attendees": ["Zakk","Nick"]
     },
     {
         "title": "Let's hango ut at the Science Museum",
@@ -74,7 +80,8 @@
         "creator": "George Lucas",
         "description": "That Mandalorian is pretty rad so let's play board games and talk about it",
         "players": [4,15],
-        "game": "Chess"
+        "game": "Chess",
+        "attendees": ["Josh", "Bill"]
     },
     {
         "title": "Board Games in the Corn Field",
@@ -85,7 +92,8 @@
         "creator": "Obi Wan",
         "description": "There's honestly not much else to do here, so let's play some games",
         "players": [2,13],
-        "game": "Mint Works"
+        "game": "Mint Works",
+        "attendees": ["Ben", "Wassim"]
     },
     {
         "title": "Hot Springs Hotel Board Game Hangout",
@@ -96,7 +104,8 @@
         "creator": "Xiaoyu",
         "description": "Let's play 棋盘游戏 together!",
         "players": [4,20],
-        "game": "Ganz schön clever"
+        "game": "Ganz schön clever",
+        "attendees": ["Paula", "Blake"]
     },
     {
         "title": "After Class Games!",
@@ -107,6 +116,7 @@
         "creator": "Not Connor",
         "description": "Let's see what they have available in the kitchen to play!",
         "players": [1,24],
-        "game": "Fuse"
+        "game": "Fuse",
+        "attendees": ["Tory", "Shelby"]
     }
 ]
