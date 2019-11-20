@@ -16,7 +16,10 @@ const meetupSchema = new Schema({
     "description": String,
     "players": [Number],
     "game": String,
-    "attendees": [String]
+    "attendees": {
+        type: Array,
+        items: { type: String }
+    }
 }
 );
 
