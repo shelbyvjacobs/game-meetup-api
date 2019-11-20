@@ -41,7 +41,7 @@ app.put("/meetup/id/:id", function(req, res){
     });
 });
 
-app.post("/meetup/attendees/:id", function(req, res){
+app.put("/meetup/attendees/:id", function(req, res){
    Meetup.findOneAndUpdate({ attendees: req.params.attendees },
     req.body, {
         new: true
