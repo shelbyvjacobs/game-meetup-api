@@ -4,7 +4,7 @@ const Schema = mongoose.Schema
 
 const attendeeSchema = new Schema({
     "attendees": {
-        type: [String],
+        formType: [String],
         default: undefined 
     }
 })
