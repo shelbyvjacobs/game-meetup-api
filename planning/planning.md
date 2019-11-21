@@ -49,3 +49,7 @@ Below are wireframes of these pages.
 ### Division of Labor
 
 Our goal is to divide the work among ourselves as fairly as possible. Dallas is working on the API and will seed the data necessary for the backend. Tory is learning React Redux and React Google Maps for utilization in the front end. Shelby is building components using Storybook, to be incorporated into the React app.
+
+### Future Plans
+
+We would like to incorporate authentication into the app at a future date where we can implement users that can sign up and keep track of their created events. This could extend even to events or maybe hosts they'd like to follow. 
