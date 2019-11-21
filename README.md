@@ -3,6 +3,13 @@
 ### Description
 The Game Meetup API is the backbone to the Board Game Meetup app currently [in production](https://github.com/torykling/game-meetup). The API utilizes data from the [Board Game Atlas API](https://www.boardgameatlas.com/api/docs) in a JSON file with models built with Mongoose, Mongoose queries with RESTful paths, and a Node.js seed file. This is a part of a group project made in the General Assembly Software Engineering Immersive program. 
 
+[DEPLOYED VERSION](https://game-meetup-api.herokuapp.com/)
+
+#### Team Members 
+- [Dallas Lind](https://github.com/DallasLind)
+- [Shelby Jacobs](https://github.com/shelbyvjacobs)
+- [Tory Klingenstein](https://github.com/torykling)
+
 ### Example
 This is an example of what can be found in our JSON data for the games model.
 ```
@@ -56,4 +63,41 @@ Until the front-end reaches completion status, this project is subject to contin
 * MongoDB
 * Node.js
 * Postman
+* Express
 
+### Installation Instructions
+
+1. clone this repository
+```
+git clone https://github.com/shelbyvjacobs/game-meetup-api.git
+```
+2. change into the directory
+```
+cd game-meetup-api
+```
+3. install dependencies
+```
+npm install
+```
+4. run the project
+```
+npm start
+```
+
+### Approach 
+
+* Connect to database & test connection
+* Find API that's interesting & has good documentation
+* Brainstorm features and models
+* Create schemas and seed database
+* Make API routes and test all endpoints
+* Develop bigger and better features
+
+### Future Plans
+
+* Implement authentication for users
+* Create users model/schema/routes
+
+### Contribute
+Source code: [https://github.com/shelbyvjacobs/game-meetup-api](https://github.com/shelbyvjacobs/game-meetup-api)
+Issue Tracker: [https://github.com/shelbyvjacobs/game-meetup-api/issues](https://github.com/shelbyvjacobs/game-meetup-api/issues)
